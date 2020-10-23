@@ -199,6 +199,10 @@ nav div.avatar-container {
     padding: 10px;
 }
 
+.post .post-actions {
+    padding: 10px;
+}
+
 .like-button {
     background-image: url(../images/like.png);
     background-size: 15px;
