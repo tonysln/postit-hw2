@@ -113,6 +113,20 @@ nav div.avatar-container {
     text-align: right;
 }
 
+#user-avatar {
+    cursor: pointer;
+}
+
+#drop-down-menu {
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #ffffff;
+    padding: 8px;
+    display: none;
+}
+
 .main-container {
     width: 50%;
     min-height: 100%;

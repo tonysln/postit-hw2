@@ -4,10 +4,25 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="res/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous">
+    </script>
+    <script src="res/js/script.js"></script>
     <title>postIt! Just Post It</title>
   </head>
   <body>
     <header>
+      <div id="drop-down-menu">
+        <span id="user-name"></span>
+        <br>
+        <span id="user-email"></span>
+        <hr>
+        <a href="browse.html">Browse</a>
+        <hr>
+        <a href="login.html">Log Out</a>
+      </div>
+
       <nav>
         <div class="logo-container">
           <img src="res/images/logo.png" alt="postIt">
@@ -16,7 +31,7 @@
           <input type="text" name="search"><button type="button">Search</button>
         </div>
         <div class="avatar-container">
-          <img src="res/images/avatar.png" class="avatar" alt="Me">
+          <img src="" class="avatar" alt="Me" id="user-avatar">
         </div>
       </nav>
     </header>
