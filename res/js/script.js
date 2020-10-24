@@ -12,6 +12,13 @@ $(function() {
     $("#user-avatar").click(function() {
         $("#drop-down-menu").toggle()
     })
+
+    //Toggle follow button
+    $('button.follow-button').click(function () {
+        $(this).toggleClass('followed-button')
+        if (this.innerHTML === "Follow") this.innerHTML = "Followed"
+        else this.innerHTML = "Follow"
+    });
 })
 
 function displayUserInfo(user) {
