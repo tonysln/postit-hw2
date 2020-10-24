@@ -4,13 +4,18 @@ $(function() {
     // Load all posts from the endpoint
     loadPosts()
         .then(function (postsResponse) {
-            console.log(postsResponse)
             posts = postsResponse
             displayPosts(posts)
         })
         .catch(function () {
             console.log("Error loading posts!")
         });
+
+    // Toggle follow button
+    // Used .on() method because the buttons are added dynamically 
+    $('body').on("click", "button.like-button", function () {
+        $(this).toggleClass('liked')
+    });
 })
 
 function displayPosts(posts) {
